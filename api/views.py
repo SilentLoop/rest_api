@@ -30,3 +30,31 @@ def get_info(request):
     }
 
     return Response(info, status=status.HTTP_200_OK)
+
+
+@api_view(['GET'])
+def profile(request):
+    profile = {
+        'urls': {
+        'github':'github.com/asef',
+        'twitter':'https://twitter.com/asef',
+        'facebook':'https://facebook.com/asef',
+        'instagram':'https://instagram.com/asef'
+        },
+        'skills': ['Python', 'Django', 'Flask', 'JavaScript', 'React', 'Vue', 'Node.js', 'MongoDB', 'PostgreSQL'],
+        'experience': '5 years',
+        'education': 'Computer Science',
+        'hobbies': ['Reading', 'Coding', 'Traveling', 'Music'],
+        'languages': ['English', 'Spanish', 'French', 'German', 'Italian'],
+        'interests': ['Technology', 'Science', 'Space', 'Philosophy', 'History'],
+        'certifications': ['AWS Certified Developer', 'Google Cloud Professional Cloud Developer', 'Microsoft'],
+        'projects': ['Project 1', 'Project 2', 'Project 3'],
+        'awards': ['Best Developer', 'Best Team Player', 'Best Employee'],
+        'achievements': ['Employee of the Year', 'Employee of the Month', 'Best Performance'],
+        'publications': ['Publication 1', 'Publication 2', 'Publication 3'],
+        'references': ['Reference 1', 'Reference 2', 'Reference 3'],
+        'contact': {
+            'phone': '099999939934',
+            'email': 'gang@gmail.com'
+            }
+    }
