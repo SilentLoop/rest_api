@@ -58,3 +58,4 @@ def profile(request):
             'email': 'gang@gmail.com'
             }
     }
+    return Response(profile, status=status.HTTP_200_OK)
